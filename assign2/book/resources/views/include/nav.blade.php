@@ -13,7 +13,7 @@
                     <a class="nav-link text-secondary active" aria-current="page" href="{{route('create')}}">Create</a>
                 </li>
                 <li class="nav-item text-secondary">
-                    <a class="nav-link" href="{{route('logout')}}">Logout</a>
+                    <a class="nav-link" onclick="return confirm('Are you sure, You want to logout')" href="{{route('logout')}}">Logout</a>
                 </li>
             </ul>
             <form method="post" action="{{route('search')}}" class="d-flex">

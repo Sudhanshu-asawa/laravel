@@ -27,7 +27,7 @@
                         <form method="POST" action="{{ route('BookDelete', $books) }}" style="display:inline-block">
                             @csrf
                             @method('DELETE')
-                            <button type="submit" class="btn btn-light btn-outline-secondary">Delete</button>
+                            <button type="submit" onclick="return confirm('Data would be deleted permanently')" class="btn btn-light btn-outline-secondary">Delete</button>
                         </form>
                     </td>
                 </tr>
