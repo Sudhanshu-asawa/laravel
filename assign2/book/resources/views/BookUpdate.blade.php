@@ -22,7 +22,8 @@
             @method('PUT')
             <div class="mb-3">
                 <label for="exampleInputTitle" class="form-label">Title</label>
-                <input value="{{ old('title', $book->Title) }}" type="text" name="title" class="form-control" id="exampleInputTitle">
+                <input value="{{ old('title', $book->Title) }}" type="text" name="title" class="form-control"
+                       id="exampleInputTitle">
                 @if ($errors->has('title'))
                     <span class="text-danger">{{ $errors->first('title') }}</span>
                 @endif
@@ -30,7 +31,8 @@
             </div>
             <div class="mb-3">
                 <label for="exampleInputAuthor" class="form-label">Author</label>
-                <input value="{{ old('author', $book->Author) }}" type="text" name="author" class="form-control" id="exampleInputAuthor">
+                <input value="{{ old('author', $book->Author) }}" type="text" name="author" class="form-control"
+                       id="exampleInputAuthor">
                 @if ($errors->has('author'))
                     <span class="text-danger">{{ $errors->first('author') }}</span>
                 @endif
@@ -38,7 +40,8 @@
             </div>
             <div class="mb-3">
                 <label for="exampleInputDate" class="form-label">Publication Date</label>
-                <input value="{{ old('publication_date', $book->Publication_Date) }}" type="date" name="date" class="form-control" id="exampleInputDate">
+                <input value="{{ old('publication_date', $book->Publication_Date) }}" type="date" name="date"
+                       class="form-control" id="exampleInputDate">
                 @if ($errors->has('date'))
                     <span class="text-danger">{{ $errors->first('date') }}</span>
                 @endif
@@ -46,7 +49,8 @@
             </div>
             <div class="mb-3">
                 <label for="exampleInputDes" class="form-label">Description</label>
-                <input value="{{ old('description', $book->Description) }}" type="text" name="description" class="form-control" id="exampleInputDes">
+                <input value="{{ old('description', $book->Description) }}" type="text" name="description"
+                       class="form-control" id="exampleInputDes">
                 @if ($errors->has('description'))
                     <span class="text-danger">{{ $errors->first('description') }}</span>
                 @endif

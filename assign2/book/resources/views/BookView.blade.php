@@ -23,17 +23,19 @@
                     <td>{{$books->Publication_Date}}</td>
                     <td>{{$books->Description}}</td>
                     <td>
-                        <button class="btn btn-outline-secondary btn-light"><a class="text-decoration-none text-secondary" href="{{route('update',$books)}}"> Edit</a></button>
+                        <button class="btn btn-outline-secondary btn-light"><a
+                                class="text-decoration-none text-secondary" href="{{route('update',$books)}}"> Edit</a>
+                        </button>
                         <form method="POST" action="{{ route('BookDelete', $books) }}" style="display:inline-block">
                             @csrf
                             @method('DELETE')
-                            <button type="submit" onclick="return confirm('Data would be deleted permanently')" class="btn btn-light btn-outline-secondary">Delete</button>
+                            <button type="submit" onclick="return confirm('Data would be deleted permanently')"
+                                    class="btn btn-light btn-outline-secondary">Delete
+                            </button>
                         </form>
                     </td>
                 </tr>
             @endforeach
-
-
             </tbody>
         </table>
 

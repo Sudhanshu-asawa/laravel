@@ -14,7 +14,8 @@
                 </div>
             @endif
         </div>
-        <form  action="{{route('signup.post')}}" method="post" class="ms-auto mt-auto me-auto bg-light p-5" style="width: 500px">
+        <form action="{{route('signup.post')}}" method="post" class="ms-auto mt-auto me-auto bg-light p-5"
+              style="width: 500px">
             <h3 class="pb-4">SignUp</h3>
             @csrf
             <div class="mb-3">
