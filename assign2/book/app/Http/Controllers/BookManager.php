@@ -58,7 +58,6 @@ class BookManager extends Controller
             return redirect(route('create'))->with('error', 'Creation Failed, Try Again');
         }
         return redirect(route('view'))->with('success', 'Creation Successful');
-
     }
 
     public function updatePut(Request $request, Books $book)
@@ -66,7 +65,7 @@ class BookManager extends Controller
         $request->validate([
             'title' => 'required|max:15',
             'author' => 'required|max:15|regex:/^[a-zA-Z]+(?:\s[a-zA-Z]+)+$/',
-            'description' => 'required|max:15',
+            'description' => 'required',
             'date' => 'required|before:today'
         ]);
 
